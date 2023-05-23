@@ -1,7 +1,4 @@
 .refresh-button {
-    position: sticky;
-    left: 50px;
-    transform: translateY(-80px);
     z-index: 1;
     min-width: 150px;
     padding: 10px 20px;
@@ -10,25 +7,26 @@
     justify-content: center;
     border-radius: 12px;
     text-transform: uppercase;
+    margin: 0;
     letter-spacing: .02em;
-    background: #1E90FFAA;
     font-size: 16px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    background-color: rgba(30, 144, 255, 0.8);
     color: white;
     opacity: 1;
-    transition: opacity 250ms ease, background-color 250ms ease, color 250ms ease, transform 400ms cubic-bezier(.42,1.6,.94,1.21);
+    transition: all 300ms ease-in-out;
+    position: sticky;
+    left: 50px;
+    backdrop-filter: blur(4px);
+    transform: translateY(-80px);
 }
 
 .refresh-button:hover {
-    background-color: #1E90FFFF;
-    color: white;
-}
-
-#board {
-    position: relative;
+    background-color: rgba(30, 144, 255, 1);
 }
 
 #board:not(.filtering) .refresh-button {
-    transform: translateY(100px);
     opacity: 0;
+    transform: translateY(100px);
 }

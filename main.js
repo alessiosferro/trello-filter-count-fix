@@ -4,10 +4,10 @@ const intervalId = window.setInterval(() => {
     clearInterval(intervalId);
 
     const refreshButton = document.createElement('button');
-    const board = document.getElementById('board');
-
     refreshButton.className = "refresh-button";
     refreshButton.textContent = "Fix count";
+
+    const board = document.getElementById('board');
 
     refreshButton.onclick = () => {
         const lists = Array.from(document.querySelectorAll('.js-list'));
