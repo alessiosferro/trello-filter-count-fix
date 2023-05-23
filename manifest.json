@@ -1,5 +1,12 @@
 {
   "manifest_version": 3,
   "version": "1.0.0",
-  "name": "Trello Filter Extension"
+  "name": "Trello Filter Extension",
+  "description": "Tweaks for Trello",
+  "author": "Alessio Sferro",
+  "content_scripts": [{
+    "js": ["main.js"],
+    "css": ["style.css"],
+    "matches": ["https://trello.com/*"]
+  }]
 }
